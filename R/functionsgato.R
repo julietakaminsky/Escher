@@ -10,9 +10,13 @@
 #' @export
 #'
 #' @examples
-#' p <- c(100,1000,2000)
-#' shannon(p)
+#' datosPruebaShannon <- c(rpois(100,10))
+#' shannon(datosPruebaShannon)
+#' devtools::use_data(datosPruebaShannon)
 #'
+#' filename <- system.file("extdata", "Clorofila.text", package = "PaqueGato")
+#' chla <- read.delim(filename)
+#' fixClorophylData(filename)
 shannon <- function(species)
 {
   species <- species[species>0]
@@ -102,3 +106,6 @@ readEcoNetwork <- function(fileName){
   })
   return(g)
 }
+
+
+
