@@ -2,10 +2,17 @@ Package: Escher
 Type: Package
 Title: Instrucciones para construir paquetes
 Version: 0.1.0.9000
-Authors@R: person( c("Julieta", "Kaminsky", email="kaminsky.julieta@gmail.com")
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Authors@R: person("Julieta", "Kaminsky", email="kaminsky.julieta@gmail.com", role=("cre"))
+Description: Los fernet con pomelo están de pelos
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: MIT
 Encoding: UTF-8
 LazyData: true
+Depends: R (>= 3.4.4)
+Imports: 
+  lubridate (>= 1.7.4),
+  ggplot2 (>= 3.0.0),
+  igraph (>= 1.2.1)
+URL: http://github.com/julietakaminsky/Escher
+BugReports: http://github.com/julietakaminsky/Escher/issues
+RoxygenNote: 6.0.1
